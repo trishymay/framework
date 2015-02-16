@@ -1,17 +1,5 @@
-var framework = require('./lib/server')
-var app = framework()
+var framework = require("./framework");
 
-app;
+framework.addResource("kittens");
 
-// app.get('/', function (req, res) {
-//   res.send('Hello World!')
-// })
-
-// var server = app.listen(3000, function () {
-
-//   var host = server.address().address
-//   var port = server.address().port
-
-//   console.log('Example app listening at http://%s:%s', host, port)
-
-// })
+framework.startServer();
